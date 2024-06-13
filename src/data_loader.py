@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun 11 22:34:20 2020
+Created on Thu Jun 12 02:10:20 2024
 
-@author: Krish Naik
+@author: Vinay Pattnashetti
 """
 
 from __future__ import division, print_function
@@ -31,10 +31,6 @@ MODEL_PATH ='model_vgg19.h5'
 
 # Load your trained model
 model = load_model(MODEL_PATH)
-
-
-
-
 
 def model_predict(img_path, model):
     img = image.load_img(img_path, target_size=(224, 224))
