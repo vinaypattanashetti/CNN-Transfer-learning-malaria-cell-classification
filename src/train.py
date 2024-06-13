@@ -2,7 +2,7 @@
 
 # -*- coding: utf-8 -*-
 """
-@author: Krish.Naik
+@author: Vinay Pattnanashetti
 """
 
 ## MAlaria Detection using Transfer Learning
@@ -34,13 +34,10 @@ vgg = VGG19(input_shape=IMAGE_SIZE + [3], weights='imagenet', include_top=False)
 # don't train existing weights
 for layer in vgg.layers:
   layer.trainable = False
-  
-
-  
-  # useful for getting number of classes
+    
+# useful for getting number of classes
 folders = glob('cell_images/Train/*')
   
-
 # our layers - you can add more if you want
 x = Flatten()(vgg.output)
 # x = Dense(1000, activation='relu')(x)
@@ -58,7 +55,6 @@ model.compile(
   optimizer='adam',
   metrics=['accuracy']
 )
-
 
 # Use the Image Data Generator to import the images from the dataset
 from keras.preprocessing.image import ImageDataGenerator
