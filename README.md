@@ -14,7 +14,6 @@
 <h2>Table of Contents</h2>
 <ul>
   <li><a href="#overview">Overview</a></li>
-  <li><a href="#project-structure">Project Structure</a></li>
   <li><a href="#dataset">Dataset</a></li>
   <li><a href="#requirements">Requirements</a></li>
   <li><a href="#installation">Installation</a></li>
@@ -27,30 +26,7 @@
   <li><a href="#acknowledgements">Acknowledgements</a></li>
   <li><a href="#references">References</a></li>
 </ul>
-<h2 id="project-structure">Project Structure</h2>
-<pre>
-Malaria-Cell-Classification/
-├── data/
-│   ├── cell_images/
-│   │   ├── Parasitized/
-│   │   ├── Uninfected/
-│   ├── train/
-│   ├── val/
-│   ├── test/
-├── models/
-├── notebooks/
-│   ├── data_preparation.ipynb
-│   ├── model_training.ipynb
-│   ├── evaluation.ipynb
-├── src/
-│   ├── data_loader.py
-│   ├── model.py
-│   ├── train.py
-│   ├── evaluate.py
-├── requirements.txt
-├── README.md
-└── config.yaml
-</pre>
+
 <h2 id="dataset">Dataset</h2>
 <p>The dataset used in this project can be downloaded from the official NIH dataset repository or Kaggle. It contains cell images categorized into two classes:</p>
 <li><a href="https://www.kaggle.com/datasets/iarunava/cell-images-for-detecting-malaria/data">Malaria Cell Classification Kaggle Dataset </a></li>
